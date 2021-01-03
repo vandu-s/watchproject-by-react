@@ -1,0 +1,165 @@
+
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.topbar{
+    background-color: #090505;
+    padding: 24px 48px 12px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.topbar>img{
+    width: 100px;
+}
+.container{
+    padding: 4% 12%;
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.productPreview{
+    width: 50%;
+    position: relative;
+}
+.productPreview>img{
+    width: 100%;
+
+}
+.timeSection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    display: none;
+}
+.HeartBeat{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.HeartBeat>p{
+    margin: 0;
+    margin-top: 16px;
+}
+.HeartBeat>i{
+    color: red;
+    animation: beat 1s infinite ;
+}
+
+@keyframes beat{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2, 1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+
+}
+.productData{
+    width: 50%;
+}
+.productTitle{
+font-size: 48px;
+font-weight: 600;
+margin-top: 0;
+margin-bottom: 16px;
+}
+
+.sectionHeading{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.productDescription{
+    font-size: 20px;
+    color: rgba(0,0,0,0.8);
+    margin-top: 0;
+    margin-bottom: 1;
+}
+.productImg{
+    width: 100%;
+    max-width: 80px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.selectedProductImg{
+    border: 2px solid teal;
+ 
+}
+.featureItem{
+    background-color: gainsboro;
+    border-radius: 8px;
+    border: 0;
+    padding: 12px 24px;
+    min-width: 80px;
+    text-align: center;
+    font-weight: 600;
+    box-sizing: content-box;
+    margin-right: 12px;
+    cursor: pointer;
+    outline: 0;
+
+}
+.selectedFeatureItem{
+    color: white;
+    background-color: gray;
+}
+
+.primarybtn{
+    color: white;
+    background-color: teal;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+    padding: 12px 24px;
+    margin-top: 36px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*.menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #20232a;
+    padding: 10px 5px;
+    width: 100%;
+}
+ a{
+    color:white;
+text-decoration: none;
+font-weight: 500;
+font-size: 18px;}
+
+a.active{
+color: #61dafb;
+border-bottom: 2px solid #61dafb;
+} */
